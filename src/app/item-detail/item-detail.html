@@ -1,0 +1,10 @@
+<h2>Detalle del anime</h2>
+
+@if (elemento != null) {
+  <p><strong>Nombre:</strong> {{ elemento.nombre }}</p>
+  <p><strong>Género:</strong> {{ elemento.categoria }}</p>
+  <p><strong>Descripción:</strong> {{ elemento.descripcion }}</p>
+  <p><strong>Estado:</strong> {{ elemento.estado }}</p>
+} @else {
+  <p>Selecciona un anime para ver sus detalles.</p>
+}

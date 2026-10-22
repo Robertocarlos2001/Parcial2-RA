@@ -1,0 +1,14 @@
+<h1>Catálogo de Animes</h1>
+
+<hr>
+
+<app-item-list
+  [elementos]="elementos"
+  (elementoSeleccionado)="seleccionarElemento($event)">
+</app-item-list>
+
+<hr>
+
+<app-item-detail
+  [elemento]="elementoSeleccionado">
+</app-item-detail>

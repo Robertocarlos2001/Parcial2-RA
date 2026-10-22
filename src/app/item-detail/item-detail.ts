@@ -1,0 +1,13 @@
+import { Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-item-detail',
+  imports: [],
+  templateUrl: './item-detail.html',
+  styleUrl: './item-detail.css',
+})
+export class ItemDetail {
+
+  @Input() elemento: any = null;
+
+}

@@ -1,0 +1,12 @@
+<h2>Lista de animes</h2>
+
+<ul>
+  @for (elemento of elementos; track elemento.nombre) {
+    <li>
+      <strong>{{ elemento.nombre }}</strong>
+      <button (click)="seleccionar(elemento)">
+        Ver detalle
+      </button>
+    </li>
+  }
+</ul>
